@@ -1,21 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
 
+
 .container{
 	background-color: #2098d1;
-	clear: both;
 }
 
-.nav{
+.header{
+	position: relative;
 	width:100%;
 	display: block;
+	margin: 0 auto;
 }
-.nav::before{
+.header::before{
 	content: "";
 	display: table;
 }
 
-.nav::after{
+.header::after{
 	content: "";
 	display: table;
 	clear:both;
@@ -27,12 +29,15 @@
 	margin-left: 100px;
 	margin-top: 10px;
 	color: white;
+	padding:10px 0px;
 }
 
 .logo_description{
 	float:left;
 	margin-left: 3px;
 	margin-top: 10px;
+	position: relative;
+	padding:10px 0px;
 }
 
 
@@ -74,4 +79,37 @@ a{
 	color:white;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+.nav{
+	margin-right: 80px;
+	margin-top: 10px;
+	float: right;
+	display: block;
+	position: relative;
+	padding:10px 0px;
+	top:10px;
+
+}
+.nav ul{
+	display: inline-block;
+}
+.nav ul li{
+	display: inline-block;
+	width: auto;
+
+}
+
+.nav ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	color:white;
+	font-family: 'PT Sans Caption', sans-serif;
+	font-weight: 600;
+	font-size: 0.8em;
+	padding: 8px 10px;
+	letter-spacing: -1px;
+
 }
